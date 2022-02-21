@@ -38,7 +38,7 @@ test('popover responds to hover', () => {
     expect(popover).toBeInTheDocument() //not need this assertion as get by throws the error when elemtn is not there in the dom
     //popover disappears when we mouseout
     userEvent.click(termsAndConditions)
-    //{waitForElementToBeRemoved} this is occuring asynchronously [that is it occurs after the test is completed] so we will await this
+    //{waitForElementToBeRemoved}  is occuring asynchronously [that is it occurs after the test is completed] so we will await this
     expect(screen.queryByText(/no icecream will actually be delivered/i)).toBeNull();
   
 })

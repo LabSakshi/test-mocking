@@ -1,0 +1,10 @@
+1: install the msw
+2: create the handler, that is the function that tells when the client hit the specific API/URL what response should be returned
+
+type of API-> rest/ graphQL
+type of request -> get/post
+url: which API to hit
+call back function taht takes in req, res, ctx as the arguments
+and the return include res that includes the json context that is returned
+
+3:integrate the msw
